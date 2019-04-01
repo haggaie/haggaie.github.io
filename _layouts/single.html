@@ -35,7 +35,12 @@ layout: default
         {% endif %}
         
         {% if page.authors %}
-          <p>{{ page.authors }}</p>
+          {% if page.collection == 'publications' %}
+            {% assign author_name_emph = site.author.name | prepend: '<i>' | append: '</i>' %}
+            <p>{{ page.authors | replace_first: site.author.name, author_name_emph }}</p>
+          {% else %}
+            <p>{{ page.authors }}</p>
+          {% endif %}
         {% endif %}
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
