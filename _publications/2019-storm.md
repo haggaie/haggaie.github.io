@@ -3,9 +3,9 @@ title: "Storm: a fast transactional dataplane for remote data structures"
 collection: publications
 permalink: /publications/2019-storm
 excerpt: ''
-date: 2019-02-6
-venue: "arXiv preprint"
-paperurl: 'https://arxiv.org/abs/1902.02411'
+date: 2019-6-4
+venue: "SYSTOR '19, Proceedings of the 12th ACM International Conference on Systems and Storage"
+paperurl: 'https://dl.acm.org/citation.cfm?id=3325827'
 #citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 authors: Stanko Novakovic, Yizhou Shan, Aasheesh Kolli, Michael Cui, Yiying Zhang, Haggai Eran, Liran Liss, Michael Wei, Dan Tsafrir, Marcos Aguilera 
 ---
