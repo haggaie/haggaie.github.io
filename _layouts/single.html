@@ -51,13 +51,21 @@ layout: default
         {% endif %}
         
              
-        {% if page.citation and page.paperurl %}
-          <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
-        {% elsif page.citation %}
-          <p>Recommended citation: {{ page.citation }} </p>
-	{% elsif page.paperurl %}
-          <p>[<a href="{{ page.paperurl }}">paper</a>]</p>
-        {% endif %}
+        {% if page.citation or page.paperurl or page.slides %}
+          <p>
+            {% if page.citation and page.paperurl %}
+              Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a>
+            {% elsif page.citation %}
+              Recommended citation: {{ page.citation }} 
+            {% elsif page.paperurl %}
+              [<a href="{{ page.paperurl }}">paper</a>]
+            {% endif %}
+
+            {% if page.slides %}
+              [<a href="{{ page.slides }}">slides</a>]
+            {% endif %}
+          </p>
+          {% endif %}
     
         </header>
       {% endunless %}
