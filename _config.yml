@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Haggai Eran"
   avatar           : "profile.jpg"
-  bio              : "PhD student @ Technion EE & software architect @ Mellanox, working on FPGA-based SmartNIC application acceleration"
+  bio              : "PhD student @ Technion EE & software architect @ NVIDIA, working on FPGA-based SmartNIC application acceleration"
   location         : "Israel"
-  employer         : "Mellanox Technologies"
+  employer         : "NVIDIA"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=GGi3qFQAAAAJ"
   email            : "haggaie@tx.technion.ac.il"
