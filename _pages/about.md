@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student at the Technion electrical engineering faculty in Haifa, Israel. I am interested in programming and operating system abstractions for hardware acceleration, and currently working on FPGA-based SmartNIC application acceleration. I also work at Mellanox Technlogies as a software architect.
+I am a PhD student at the Technion electrical engineering faculty in Haifa, Israel. I am interested in programming and operating system abstractions for hardware acceleration, and currently working on FPGA-based SmartNIC application acceleration. I also work at NVIDIA as a software architect.
