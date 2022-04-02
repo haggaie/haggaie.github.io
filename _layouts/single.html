@@ -53,8 +53,12 @@ layout: default
           <span class="awards">Awarded {{page.awards}}.</span>
         {% endif %}
              
-        {% if page.citation or page.paperurl or page.slides %}
+        {% if page.citation or page.paperurl or page.slides or page.preprint %}
           <p>
+            {% if page.preprint %}
+              [<a href="{{ page.preprint }}">preprint</a>]
+	          {% endif %}
+
             {% if page.citation and page.paperurl %}
               Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a>
             {% elsif page.citation %}
