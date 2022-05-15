@@ -8,4 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student at the Technion electrical engineering faculty in Haifa, Israel. I am interested in programming and operating system abstractions for hardware acceleration, and currently working on FPGA-based SmartNIC application acceleration. I also work at NVIDIA as a software architect.
+Haggai Eran is graduating with a PhD in electrical and computer engineering from Technion in 2022. He researches networked systems at NVIDIA Networking, focusing on 
+operating system abstractions, software-hardware interfaces, acceleration, and virtualization.
