@@ -10,6 +10,7 @@ paperurl: 'https://dl.acm.org/doi/10.1145/3503222.3507776'
 slides: '/files/flexdriver-asplos22-slides.pdf'
 authors: Haggai Eran, Maxim Fudim, Gabi Malka, Gal Shalom, Noam Cohen, Amit Hermony, Dotan Levi, Liran Liss, Mark Siblerstein
 youtube: 2WPFvEMvjzg
+awards: IEEE MICRO Top Picks 2023 honorable mention
 ---
 
 We propose a new system design for connecting hardware and
