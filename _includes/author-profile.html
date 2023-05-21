@@ -10,7 +10,14 @@
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+      <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"
+        {% if author.avatar_srcset %}
+          srcset="{% for src in author.avatar_srcset %}{{ src.src | prepend: "/images/" | prepend: base_path }} {{ src.width}}w, {% endfor %}"
+        {% endif %}
+        {% if author.avatar_sizes %}
+          sizes="{% for src in author.avatar_sizes %}{{ src.condition }} {{ src.width}}px, {% endfor %}"
+        {% endif %}
+      >
     {% endif %}
   </div>
 

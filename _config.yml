@@ -81,7 +81,19 @@ analytics:
 # Site Author
 author:
   name             : "Haggai Eran"
-  avatar           : "profile.jpg"
+  avatar           : "profile-175w.jpg"
+  avatar_srcset    :
+    - src: "profile-175w.jpg"
+      width: "175"
+    - src: "profile-36w.jpg"
+      width: "36"
+  avatar_sizes     :
+    - width: "163"
+      condition: "(min-width: 1280px)"
+    - width: "124"
+      condition: "(min-width: 940px)"
+    - width: "36"
+      condition: ""
   bio              : "Networking systems research @ NVIDIA. he/him."
   location         : "Israel"
   employer         : "NVIDIA"
