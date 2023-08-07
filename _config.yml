@@ -114,6 +114,9 @@ author:
   instagram        :
   lastfm           :
   linkedin         : "haggaieran"
+  mastodon         :
+    - username:      "haggai_e"
+      instance:      "discuss.systems"
   orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
