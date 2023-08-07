@@ -8,5 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-Haggai Eran is graduating with a PhD in electrical and computer engineering from Technion in 2022. He researches networked systems at NVIDIA Networking, focusing on 
-operating system abstractions, software-hardware interfaces, acceleration, and virtualization.
+Haggai Eran researches networked systems at NVIDIA Networking, focusing on 
+operating system abstractions, software-hardware interfaces, acceleration, and virtualization. He graduated with a PhD in electrical and computer engineering from Technion in 2022.
