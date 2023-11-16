@@ -70,6 +70,13 @@ layout: default
             {% if page.slides %}
               [<a href="{{ page.slides }}">slides</a>]
             {% endif %}
+            {% if page.youtube.lightning %}
+              [<a href="#lightning">lightning talk</a>]
+            {% endif %}
+            {% if page.youtube.talk %}
+              [<a href="#talk">talk</a>]
+            {% endif %}
+
           </p>
           {% endif %}
     
@@ -77,11 +84,15 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.youtube.lightning %}
+	        <iframe id="lightning" width="560" height="315" src="https://www.youtube.com/embed/{{page.youtube.lightning}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	      {% endif %}
+        <p/>
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-	{% if page.youtube %}
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.youtube}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	{% endif %}
+        {% if page.youtube.talk %}
+          <iframe id="talk" width="560" height="315" src="https://www.youtube.com/embed/{{page.youtube.talk}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% endif %}
       </section>
 
       <footer class="page__meta">
