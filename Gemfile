@@ -24,3 +24,7 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
 end
+
+gem "json", "~> 2.7"
+
+gem "webrick", "~> 1.8"
