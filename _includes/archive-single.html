@@ -55,7 +55,11 @@
             [<a href="{{ post.slides }}">slides</a>]
 	  {% endif %}
     {% if post.youtube.talk %}
-      [<a href="https://youtube.com/watch?v={{ post.youtube.talk }}">talk</a>]
+      {% if post.youtube.talk.start %}
+        [<a href="https://youtube.com/watch?v={{ post.youtube.talk.id }}&start={{ post.youtube.talk.start }}">talk</a>]
+      {% else %}
+        [<a href="https://youtube.com/watch?v={{ post.youtube.talk }}">talk</a>]
+      {% endif %}
     {% endif %}
           <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
           {% if post.awards %}

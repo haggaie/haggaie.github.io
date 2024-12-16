@@ -91,7 +91,11 @@ layout: default
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
         {% if page.youtube.talk %}
-          <iframe id="talk" width="560" height="315" src="https://www.youtube.com/embed/{{page.youtube.talk}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          {% if page.youtube.talk.start %}
+            <iframe id="talk" width="560" height="315" src="https://www.youtube.com/embed/{{page.youtube.talk.id}}?start={{page.youtube.talk.start}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          {% else %}
+            <iframe id="talk" width="560" height="315" src="https://www.youtube.com/embed/{{page.youtube.talk}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          {% endif %}
         {% endif %}
       </section>
 
