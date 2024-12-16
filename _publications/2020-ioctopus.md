@@ -9,6 +9,8 @@ paperurl: 'http://www.cs.technion.ac.il/~dan/papers/ioctopus-asplos-2020.pdf'
 #citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 authors: Igor Smolyar, Alex Markuze, Boris Pismenny, Haggai Eran, Gerd Zellweger, Austin Bolen, Liran Liss, Adam Morrison, Dan Tsafrir
 awards: best paper
+youtube:
+  talk: RXBYjiVdsY8
 ---
 
 In a multi-CPU server, memory modules are local to the CPU to which they are

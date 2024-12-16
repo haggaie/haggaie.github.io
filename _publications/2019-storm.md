@@ -9,6 +9,8 @@ paperurl: 'https://dl.acm.org/authorize?N697010'
 #citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 authors: Stanko Novakovic, Yizhou Shan, Aasheesh Kolli, Michael Cui, Yiying Zhang, Haggai Eran, Liran Liss, Michael Wei, Dan Tsafrir, Marcos Aguilera 
 awards: best paper
+youtube:
+  talk: 3ozwrzUVUJ4
 ---
 
 RDMA is an exciting technology that enables a host to access the memory of a

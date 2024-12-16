@@ -8,6 +8,8 @@ venue: "netdev 1.1, Proceedings of NetDev 1.1: The Technical Conference on Linux
 paperurl: 'https://www.netdevconf.org/1.1/proceedings/papers/Flow-based-tunneling-for-SR-IOV-using-switchdev-API.pdf'
 #citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 authors: Ilya Lesokhin, Haggai Eran, Or Gerlitz
+youtube:
+  talk: RDJJN5wUQUM
 ---
 
 SR-IOV devices present improved performance for network virtualization, but
