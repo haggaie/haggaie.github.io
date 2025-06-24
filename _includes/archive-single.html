@@ -35,7 +35,7 @@
     </h2>
     
     {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
         {% if post.collection == 'teaching' %}
@@ -45,6 +45,9 @@
             {% assign author_name_emph = site.author.name | prepend: '<i>' | append: '</i>' %}
             <p>{{ post.authors | replace_first: site.author.name, author_name_emph }}</p>
           {% endif %}
+    {% if post.preprint || post.paperurl || post.slides || post.youtube.talk %}
+      <p>
+    {% endif %}
     {% if post.preprint %}
             [<a href="{{ post.preprint }}">preprint</a>]
 	  {% endif %}
@@ -60,6 +63,9 @@
       {% else %}
         [<a href="https://youtube.com/watch?v={{ post.youtube.talk }}">talk</a>]
       {% endif %}
+    {% endif %}
+    {% if post.preprint || post.paperurl || post.slides || post.youtube.talk %}
+      </p>
     {% endif %}
           <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
           {% if post.awards %}
@@ -77,7 +83,7 @@
     {% endif %}
     
     {% if post.citation %}
-      <p>Recommended citation: {{ post.citation }} </p>
+      <p>Recommended citation: {{ post.citation }}</p>
     {% endif %}
 
   </article>
