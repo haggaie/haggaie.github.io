@@ -4,7 +4,7 @@
 
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="theme-color" content="#ffffff">
-{% if author.pubmed or author.orcid %}
+{% if site.author.pubmed or site.author.orcid or site.author.googlescholar %}
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 {% endif %}
 
